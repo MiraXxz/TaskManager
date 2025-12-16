@@ -1,0 +1,1022 @@
+2025-12-15 13:52:51.609 +02:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-15 13:52:51.851 +02:00 [INF] Now listening on: http://localhost:5065
+2025-12-15 13:52:51.853 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-15 13:52:51.853 +02:00 [INF] Hosting environment: Development
+2025-12-15 13:52:51.853 +02:00 [INF] Content root path: C:\Users\user\source\repos\TaskManager\TaskManager.API
+2025-12-15 13:52:52.020 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger - null null
+2025-12-15 13:52:52.132 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger - 301 0 null 114.3833ms
+2025-12-15 13:52:52.139 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 13:52:52.228 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 88.9579ms
+2025-12-15 13:52:52.233 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/swagger-ui.css - null null
+2025-12-15 13:52:52.233 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/swagger-ui-bundle.js - null null
+2025-12-15 13:52:52.235 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/swagger-ui-standalone-preset.js - null null
+2025-12-15 13:52:52.235 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 13:52:52.238 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 2.8941ms
+2025-12-15 13:52:52.259 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-12-15 13:52:52.259 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-12-15 13:52:52.259 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-12-15 13:52:52.261 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 26.5865ms
+2025-12-15 13:52:52.261 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/swagger-ui.css - 200 152034 text/css 28.1863ms
+2025-12-15 13:52:52.261 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 28.1176ms
+2025-12-15 13:52:52.439 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 13:52:52.569 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 130.266ms
+2025-12-15 13:52:54.063 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 13:52:54.064 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 0.8801ms
+2025-12-15 13:52:54.078 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 13:52:54.078 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.286ms
+2025-12-15 13:52:54.135 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 13:52:54.138 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 2.6883ms
+2025-12-15 13:52:54.141 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/favicon-32x32.png - null null
+2025-12-15 13:52:54.142 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-12-15 13:52:54.142 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/favicon-32x32.png - 200 628 image/png 1.074ms
+2025-12-15 13:52:55.576 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 13:52:55.577 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 0.7812ms
+2025-12-15 13:52:55.593 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 13:52:55.593 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2802ms
+2025-12-15 13:52:55.628 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 13:52:55.630 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.5309ms
+2025-12-15 13:52:56.663 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 13:52:56.664 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 0.5513ms
+2025-12-15 13:52:56.677 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 13:52:56.678 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2158ms
+2025-12-15 13:52:56.709 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 13:52:56.711 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.4477ms
+2025-12-15 13:52:57.688 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 13:52:57.689 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 0.6674ms
+2025-12-15 13:52:57.703 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 13:52:57.703 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2009ms
+2025-12-15 13:52:57.732 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 13:52:57.733 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.3378ms
+2025-12-15 13:52:58.690 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 13:52:58.691 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 0.7054ms
+2025-12-15 13:52:58.707 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 13:52:58.707 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2788ms
+2025-12-15 13:52:58.735 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 13:52:58.736 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.5483ms
+2025-12-15 13:53:18.255 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/register - application/json-patch+json 80
+2025-12-15 13:53:18.259 +02:00 [INF] CORS policy execution failed.
+2025-12-15 13:53:18.260 +02:00 [INF] Request origin http://localhost:5065 does not have permission to access the resource.
+2025-12-15 13:53:18.262 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-12-15 13:53:18.264 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.AuthController.Register (TaskManager.API)'
+2025-12-15 13:53:18.320 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(TaskManager.Application.Commands.RegisterUser.RegisterUserCommand) on controller TaskManager.API.Controllers.AuthController (TaskManager.API).
+2025-12-15 13:53:18.404 +02:00 [INF] Executed action TaskManager.API.Controllers.AuthController.Register (TaskManager.API) in 82.1501ms
+2025-12-15 13:53:18.405 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.AuthController.Register (TaskManager.API)'
+2025-12-15 13:53:18.407 +02:00 [ERR] HTTP POST /api/auth/register responded 500 in 143.9034 ms
+System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2[TaskManager.Application.Commands.RegisterUser.RegisterUserCommand,TaskManager.Application.Commands.RegisterUser.RegisterUserResponse]' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.Handle(IRequest`1 request, IServiceProvider serviceProvider, CancellationToken cancellationToken)
+   at MediatR.Mediator.Send[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at TaskManager.API.Controllers.AuthController.Register(RegisterUserCommand command) in C:\Users\user\source\repos\TaskManager\TaskManager.API\Controllers\AuthController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-12-15 13:53:18.429 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2[TaskManager.Application.Commands.RegisterUser.RegisterUserCommand,TaskManager.Application.Commands.RegisterUser.RegisterUserResponse]' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.Handle(IRequest`1 request, IServiceProvider serviceProvider, CancellationToken cancellationToken)
+   at MediatR.Mediator.Send[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at TaskManager.API.Controllers.AuthController.Register(RegisterUserCommand command) in C:\Users\user\source\repos\TaskManager\TaskManager.API\Controllers\AuthController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-12-15 13:53:18.434 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/register - 500 null text/plain; charset=utf-8 179.8145ms
+2025-12-15 13:54:43.908 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 13:54:43.909 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 0.7149ms
+2025-12-15 13:54:43.921 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 13:54:43.921 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2026ms
+2025-12-15 13:54:43.975 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 13:54:43.977 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.2252ms
+2025-12-15 14:01:28.652 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 14:01:28.654 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 1.9175ms
+2025-12-15 14:01:28.666 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 14:01:28.666 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2985ms
+2025-12-15 14:01:28.842 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 14:01:28.844 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 2.115ms
+2025-12-15 14:23:24.653 +02:00 [INF] Application is shutting down...
+2025-12-15 14:23:38.408 +02:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-15 14:23:38.502 +02:00 [INF] Now listening on: http://localhost:5065
+2025-12-15 14:23:38.503 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-15 14:23:38.503 +02:00 [INF] Hosting environment: Development
+2025-12-15 14:23:38.503 +02:00 [INF] Content root path: C:\Users\user\source\repos\TaskManager\TaskManager.API
+2025-12-15 14:23:38.652 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 14:23:38.769 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 116.8341ms
+2025-12-15 14:23:38.778 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 14:23:38.781 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 3.3747ms
+2025-12-15 14:23:38.943 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 14:23:39.036 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 93.4016ms
+2025-12-15 14:23:59.743 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/register - application/json-patch+json 78
+2025-12-15 14:23:59.749 +02:00 [INF] CORS policy execution failed.
+2025-12-15 14:23:59.749 +02:00 [INF] Request origin http://localhost:5065 does not have permission to access the resource.
+2025-12-15 14:23:59.752 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-12-15 14:23:59.754 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.AuthController.Register (TaskManager.API)'
+2025-12-15 14:23:59.772 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(TaskManager.Application.Commands.RegisterUser.RegisterUserCommand) on controller TaskManager.API.Controllers.AuthController (TaskManager.API).
+2025-12-15 14:23:59.827 +02:00 [INF] Executed action TaskManager.API.Controllers.AuthController.Register (TaskManager.API) in 52.9055ms
+2025-12-15 14:23:59.828 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.AuthController.Register (TaskManager.API)'
+2025-12-15 14:23:59.830 +02:00 [ERR] HTTP POST /api/auth/register responded 500 in 76.9360 ms
+System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2[TaskManager.Application.Commands.RegisterUser.RegisterUserCommand,TaskManager.Application.Commands.RegisterUser.RegisterUserResponse]' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.Handle(IRequest`1 request, IServiceProvider serviceProvider, CancellationToken cancellationToken)
+   at MediatR.Mediator.Send[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at TaskManager.API.Controllers.AuthController.Register(RegisterUserCommand command) in C:\Users\user\source\repos\TaskManager\TaskManager.API\Controllers\AuthController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-12-15 14:23:59.849 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: No service for type 'MediatR.IRequestHandler`2[TaskManager.Application.Commands.RegisterUser.RegisterUserCommand,TaskManager.Application.Commands.RegisterUser.RegisterUserResponse]' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0()
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.Handle(IRequest`1 request, IServiceProvider serviceProvider, CancellationToken cancellationToken)
+   at MediatR.Mediator.Send[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at TaskManager.API.Controllers.AuthController.Register(RegisterUserCommand command) in C:\Users\user\source\repos\TaskManager\TaskManager.API\Controllers\AuthController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-12-15 14:23:59.855 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/register - 500 null text/plain; charset=utf-8 112.2155ms
+2025-12-15 14:30:27.021 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 14:30:27.023 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 1.6318ms
+2025-12-15 14:30:27.034 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 14:30:27.035 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 1.0704ms
+2025-12-15 14:30:27.200 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 14:30:27.203 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 2.3494ms
+2025-12-15 14:30:32.258 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 14:30:32.259 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 0.7188ms
+2025-12-15 14:30:32.268 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 14:30:32.268 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2558ms
+2025-12-15 14:30:32.338 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 14:30:32.340 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.5953ms
+2025-12-15 14:31:23.037 +02:00 [INF] Application is shutting down...
+2025-12-15 14:31:32.902 +02:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-15 14:31:32.981 +02:00 [INF] Now listening on: http://localhost:5065
+2025-12-15 14:31:32.984 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-15 14:31:32.984 +02:00 [INF] Hosting environment: Development
+2025-12-15 14:31:32.984 +02:00 [INF] Content root path: C:\Users\user\source\repos\TaskManager\TaskManager.API
+2025-12-15 14:31:33.128 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 14:31:33.238 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 111.2457ms
+2025-12-15 14:31:33.250 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 14:31:33.253 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 3.1422ms
+2025-12-15 14:31:33.314 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 14:31:33.402 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 87.4495ms
+2025-12-15 14:31:48.152 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/register - application/json-patch+json 78
+2025-12-15 14:31:48.163 +02:00 [INF] CORS policy execution failed.
+2025-12-15 14:31:48.163 +02:00 [INF] Request origin http://localhost:5065 does not have permission to access the resource.
+2025-12-15 14:31:48.165 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-12-15 14:31:48.167 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.AuthController.Register (TaskManager.API)'
+2025-12-15 14:31:48.185 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(TaskManager.Application.Commands.RegisterUser.RegisterUserCommand) on controller TaskManager.API.Controllers.AuthController (TaskManager.API).
+2025-12-15 14:31:48.620 +02:00 [INF] Executed action TaskManager.API.Controllers.AuthController.Register (TaskManager.API) in 432.2194ms
+2025-12-15 14:31:48.621 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.AuthController.Register (TaskManager.API)'
+2025-12-15 14:31:48.623 +02:00 [ERR] HTTP POST /api/auth/register responded 500 in 456.9589 ms
+System.InvalidOperationException: The entity type 'User' requires a primary key to be defined. If you intended to use a keyless entity type, call 'HasNoKey' in 'OnModelCreating'. For more information on keyless entity types, see https://go.microsoft.com/fwlink/?linkid=2141943.
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.ValidateNonNullPrimaryKeys(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelRuntimeInitializer.Initialize(IModel model, Boolean designTime, IDiagnosticsLogger`1 validationLogger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, LambdaExpression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at TaskManager.Infrastructure.Repositories.UserRepository.IsExistByUsernameAsync(String username) in C:\Users\user\source\repos\TaskManager\TaskManager.Infrastructure\Repositories\UserRepository.cs:line 29
+   at TaskManager.Application.Commands.RegisterUser.RegisterUserCommandHandler.Handle(RegisterUserCommand request, CancellationToken cancellationToken) in C:\Users\user\source\repos\TaskManager\TaskManager.Application\Commands\RegisterUser\RegisterUserCommandHandler.cs:line 29
+   at TaskManager.API.Controllers.AuthController.Register(RegisterUserCommand command) in C:\Users\user\source\repos\TaskManager\TaskManager.API\Controllers\AuthController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-12-15 14:31:48.658 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The entity type 'User' requires a primary key to be defined. If you intended to use a keyless entity type, call 'HasNoKey' in 'OnModelCreating'. For more information on keyless entity types, see https://go.microsoft.com/fwlink/?linkid=2141943.
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.ValidateNonNullPrimaryKeys(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.SqlServer.Infrastructure.Internal.SqlServerModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelRuntimeInitializer.Initialize(IModel model, Boolean designTime, IDiagnosticsLogger`1 validationLogger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitFactory(FactoryCallSite factoryCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ExecuteAsync[TSource,TResult](MethodInfo operatorMethodInfo, IQueryable`1 source, LambdaExpression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.AnyAsync[TSource](IQueryable`1 source, Expression`1 predicate, CancellationToken cancellationToken)
+   at TaskManager.Infrastructure.Repositories.UserRepository.IsExistByUsernameAsync(String username) in C:\Users\user\source\repos\TaskManager\TaskManager.Infrastructure\Repositories\UserRepository.cs:line 29
+   at TaskManager.Application.Commands.RegisterUser.RegisterUserCommandHandler.Handle(RegisterUserCommand request, CancellationToken cancellationToken) in C:\Users\user\source\repos\TaskManager\TaskManager.Application\Commands\RegisterUser\RegisterUserCommandHandler.cs:line 29
+   at TaskManager.API.Controllers.AuthController.Register(RegisterUserCommand command) in C:\Users\user\source\repos\TaskManager\TaskManager.API\Controllers\AuthController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-12-15 14:31:48.670 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/register - 500 null text/plain; charset=utf-8 518.3258ms
+2025-12-15 14:36:27.073 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 14:36:27.075 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 2.5498ms
+2025-12-15 14:36:27.089 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 14:36:27.089 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.354ms
+2025-12-15 14:36:27.255 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 14:36:27.257 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.8628ms
+2025-12-15 14:36:50.381 +02:00 [INF] Application is shutting down...
+2025-12-15 14:36:58.210 +02:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-15 14:36:58.291 +02:00 [INF] Now listening on: http://localhost:5065
+2025-12-15 14:36:58.293 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-15 14:36:58.293 +02:00 [INF] Hosting environment: Development
+2025-12-15 14:36:58.293 +02:00 [INF] Content root path: C:\Users\user\source\repos\TaskManager\TaskManager.API
+2025-12-15 14:36:58.437 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 14:36:58.568 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 131.0741ms
+2025-12-15 14:36:58.575 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 14:36:58.579 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 4.0498ms
+2025-12-15 14:36:58.761 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 14:36:58.839 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 78.0724ms
+2025-12-15 14:37:18.536 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/register - application/json-patch+json 80
+2025-12-15 14:37:18.542 +02:00 [INF] CORS policy execution failed.
+2025-12-15 14:37:18.543 +02:00 [INF] Request origin http://localhost:5065 does not have permission to access the resource.
+2025-12-15 14:37:18.545 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-12-15 14:37:18.548 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.AuthController.Register (TaskManager.API)'
+2025-12-15 14:37:18.565 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(TaskManager.Application.Commands.RegisterUser.RegisterUserCommand) on controller TaskManager.API.Controllers.AuthController (TaskManager.API).
+2025-12-15 14:37:19.526 +02:00 [INF] Executed DbCommand (31ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE @__username_0 = [u].[Username]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-15 14:37:19.548 +02:00 [INF] Executed action TaskManager.API.Controllers.AuthController.Register (TaskManager.API) in 980.4653ms
+2025-12-15 14:37:19.548 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.AuthController.Register (TaskManager.API)'
+2025-12-15 14:37:19.551 +02:00 [ERR] HTTP POST /api/auth/register responded 500 in 1005.2479 ms
+System.Exception: User already exists
+   at TaskManager.Application.Commands.RegisterUser.RegisterUserCommandHandler.Handle(RegisterUserCommand request, CancellationToken cancellationToken) in C:\Users\user\source\repos\TaskManager\TaskManager.Application\Commands\RegisterUser\RegisterUserCommandHandler.cs:line 30
+   at TaskManager.API.Controllers.AuthController.Register(RegisterUserCommand command) in C:\Users\user\source\repos\TaskManager\TaskManager.API\Controllers\AuthController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-12-15 14:37:19.577 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: User already exists
+   at TaskManager.Application.Commands.RegisterUser.RegisterUserCommandHandler.Handle(RegisterUserCommand request, CancellationToken cancellationToken) in C:\Users\user\source\repos\TaskManager\TaskManager.Application\Commands\RegisterUser\RegisterUserCommandHandler.cs:line 30
+   at TaskManager.API.Controllers.AuthController.Register(RegisterUserCommand command) in C:\Users\user\source\repos\TaskManager\TaskManager.API\Controllers\AuthController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-12-15 14:37:19.588 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/register - 500 null text/plain; charset=utf-8 1052.1271ms
+2025-12-15 14:37:48.335 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 14:37:48.336 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 1.0675ms
+2025-12-15 14:37:48.352 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 14:37:48.352 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.4108ms
+2025-12-15 14:37:48.400 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 14:37:48.402 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.7639ms
+2025-12-15 14:37:51.155 +02:00 [INF] Application is shutting down...
+2025-12-15 14:37:58.449 +02:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-15 14:37:58.575 +02:00 [INF] Now listening on: http://localhost:5065
+2025-12-15 14:37:58.577 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-15 14:37:58.578 +02:00 [INF] Hosting environment: Development
+2025-12-15 14:37:58.578 +02:00 [INF] Content root path: C:\Users\user\source\repos\TaskManager\TaskManager.API
+2025-12-15 14:37:58.762 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 14:37:58.971 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 210.8483ms
+2025-12-15 14:37:58.984 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 14:37:58.987 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 3.7523ms
+2025-12-15 14:37:59.127 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 14:37:59.259 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 132.1048ms
+2025-12-15 14:38:37.243 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/register - application/json-patch+json 80
+2025-12-15 14:38:37.249 +02:00 [INF] CORS policy execution failed.
+2025-12-15 14:38:37.249 +02:00 [INF] Request origin http://localhost:5065 does not have permission to access the resource.
+2025-12-15 14:38:37.251 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-12-15 14:38:37.253 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.AuthController.Register (TaskManager.API)'
+2025-12-15 14:38:37.271 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(TaskManager.Application.Commands.RegisterUser.RegisterUserCommand) on controller TaskManager.API.Controllers.AuthController (TaskManager.API).
+2025-12-15 14:38:38.065 +02:00 [INF] Executed DbCommand (25ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE @__username_0 = [u].[Username]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-15 14:38:38.089 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE @__email_0 = [u].[Email]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-15 14:38:38.352 +02:00 [INF] Executed DbCommand (39ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [Email], [PasswordHash], [Username], [isActive])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-12-15 14:38:38.374 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Commands.RegisterUser.RegisterUserResponse'.
+2025-12-15 14:38:38.394 +02:00 [INF] Executed action TaskManager.API.Controllers.AuthController.Register (TaskManager.API) in 1120.1534ms
+2025-12-15 14:38:38.395 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.AuthController.Register (TaskManager.API)'
+2025-12-15 14:38:38.397 +02:00 [INF] HTTP POST /api/auth/register responded 200 in 1145.3069 ms
+2025-12-15 14:38:38.403 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/register - 200 417 application/json; charset=utf-8 1160.7569ms
+2025-12-15 14:39:35.950 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/register - application/json-patch+json 80
+2025-12-15 14:39:35.952 +02:00 [INF] CORS policy execution failed.
+2025-12-15 14:39:35.952 +02:00 [INF] Request origin http://localhost:5065 does not have permission to access the resource.
+2025-12-15 14:39:35.952 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.AuthController.Register (TaskManager.API)'
+2025-12-15 14:39:35.953 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(TaskManager.Application.Commands.RegisterUser.RegisterUserCommand) on controller TaskManager.API.Controllers.AuthController (TaskManager.API).
+2025-12-15 14:39:35.971 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE @__username_0 = [u].[Username]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-15 14:39:35.972 +02:00 [INF] Executed action TaskManager.API.Controllers.AuthController.Register (TaskManager.API) in 19.1821ms
+2025-12-15 14:39:35.972 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.AuthController.Register (TaskManager.API)'
+2025-12-15 14:39:35.973 +02:00 [ERR] HTTP POST /api/auth/register responded 500 in 20.7745 ms
+System.Exception: User already exists
+   at TaskManager.Application.Commands.RegisterUser.RegisterUserCommandHandler.Handle(RegisterUserCommand request, CancellationToken cancellationToken) in C:\Users\user\source\repos\TaskManager\TaskManager.Application\Commands\RegisterUser\RegisterUserCommandHandler.cs:line 30
+   at TaskManager.API.Controllers.AuthController.Register(RegisterUserCommand command) in C:\Users\user\source\repos\TaskManager\TaskManager.API\Controllers\AuthController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-12-15 14:39:35.980 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: User already exists
+   at TaskManager.Application.Commands.RegisterUser.RegisterUserCommandHandler.Handle(RegisterUserCommand request, CancellationToken cancellationToken) in C:\Users\user\source\repos\TaskManager\TaskManager.Application\Commands\RegisterUser\RegisterUserCommandHandler.cs:line 30
+   at TaskManager.API.Controllers.AuthController.Register(RegisterUserCommand command) in C:\Users\user\source\repos\TaskManager\TaskManager.API\Controllers\AuthController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-12-15 14:39:35.985 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/register - 500 null text/plain; charset=utf-8 34.283ms
+2025-12-15 14:42:55.286 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 14:42:55.287 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 1.0186ms
+2025-12-15 14:42:55.298 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 14:42:55.299 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.3827ms
+2025-12-15 14:42:55.457 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 14:42:55.459 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.8563ms
+2025-12-15 14:44:01.444 +02:00 [INF] Application is shutting down...
+2025-12-15 15:04:15.545 +02:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-15 15:04:15.628 +02:00 [INF] Now listening on: http://localhost:5065
+2025-12-15 15:04:15.630 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-15 15:04:15.630 +02:00 [INF] Hosting environment: Development
+2025-12-15 15:04:15.630 +02:00 [INF] Content root path: C:\Users\user\source\repos\TaskManager\TaskManager.API
+2025-12-15 15:04:15.774 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 15:04:15.894 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 120.509ms
+2025-12-15 15:04:15.901 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 15:04:15.904 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 3.3959ms
+2025-12-15 15:04:16.060 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 15:04:16.140 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 80.8141ms
+2025-12-15 15:04:28.715 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/login - application/json-patch+json 48
+2025-12-15 15:04:28.722 +02:00 [INF] CORS policy execution failed.
+2025-12-15 15:04:28.723 +02:00 [INF] Request origin http://localhost:5065 does not have permission to access the resource.
+2025-12-15 15:04:28.725 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-12-15 15:04:28.727 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.AuthController.Login (TaskManager.API)'
+2025-12-15 15:04:28.744 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskManager.Application.Commands.LoginUser.LoginUserCommand) on controller TaskManager.API.Controllers.AuthController (TaskManager.API).
+2025-12-15 15:04:29.595 +02:00 [INF] Executed DbCommand (69ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE @__username_0 = [u].[Username]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-15 15:04:29.629 +02:00 [INF] Executed action TaskManager.API.Controllers.AuthController.Login (TaskManager.API) in 881.9436ms
+2025-12-15 15:04:29.629 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.AuthController.Login (TaskManager.API)'
+2025-12-15 15:04:29.632 +02:00 [ERR] HTTP POST /api/auth/login responded 500 in 906.6998 ms
+System.ArgumentException: Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+   at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+   at TaskManager.Infrastructure.Service.PasswordService.VerifyPassword(String hashedPassword, String plainPassword) in C:\Users\user\source\repos\TaskManager\TaskManager.Infrastructure\Service\PasswordService.cs:line 46
+   at TaskManager.Application.Commands.LoginUser.LoginUserCommandHandler.Handle(LoginUserCommand request, CancellationToken cancellationToken) in C:\Users\user\source\repos\TaskManager\TaskManager.Application\Commands\LoginUser\LoginUserCommandHandler.cs:line 31
+   at TaskManager.API.Controllers.AuthController.Login(LoginUserCommand command) in C:\Users\user\source\repos\TaskManager\TaskManager.API\Controllers\AuthController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-12-15 15:04:29.674 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+   at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+   at TaskManager.Infrastructure.Service.PasswordService.VerifyPassword(String hashedPassword, String plainPassword) in C:\Users\user\source\repos\TaskManager\TaskManager.Infrastructure\Service\PasswordService.cs:line 46
+   at TaskManager.Application.Commands.LoginUser.LoginUserCommandHandler.Handle(LoginUserCommand request, CancellationToken cancellationToken) in C:\Users\user\source\repos\TaskManager\TaskManager.Application\Commands\LoginUser\LoginUserCommandHandler.cs:line 31
+   at TaskManager.API.Controllers.AuthController.Login(LoginUserCommand command) in C:\Users\user\source\repos\TaskManager\TaskManager.API\Controllers\AuthController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-12-15 15:04:29.686 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/login - 500 null text/plain; charset=utf-8 971.2865ms
+2025-12-15 15:05:05.674 +02:00 [INF] Application is shutting down...
+2025-12-15 15:05:30.701 +02:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-15 15:05:30.781 +02:00 [INF] Now listening on: http://localhost:5065
+2025-12-15 15:05:30.784 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-15 15:05:30.784 +02:00 [INF] Hosting environment: Development
+2025-12-15 15:05:30.784 +02:00 [INF] Content root path: C:\Users\user\source\repos\TaskManager\TaskManager.API
+2025-12-15 15:05:30.957 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 15:05:31.115 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 159.69ms
+2025-12-15 15:05:31.123 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 15:05:31.129 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 6.8727ms
+2025-12-15 15:05:31.190 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 15:05:31.290 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 99.858ms
+2025-12-15 15:05:51.619 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 15:05:51.622 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 2.6244ms
+2025-12-15 15:05:51.633 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 15:05:51.634 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.2837ms
+2025-12-15 15:05:51.674 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 15:05:51.676 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.7124ms
+2025-12-15 15:07:11.791 +02:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-15 15:07:11.870 +02:00 [INF] Now listening on: http://localhost:5065
+2025-12-15 15:07:11.872 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-15 15:07:11.872 +02:00 [INF] Hosting environment: Development
+2025-12-15 15:07:11.872 +02:00 [INF] Content root path: C:\Users\user\source\repos\TaskManager\TaskManager.API
+2025-12-15 15:07:12.040 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 15:07:12.174 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 135.4728ms
+2025-12-15 15:07:12.183 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 15:07:12.187 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 4.5156ms
+2025-12-15 15:07:12.247 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 15:07:12.346 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 99.0998ms
+2025-12-15 15:07:43.059 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/login - application/json-patch+json 48
+2025-12-15 15:07:43.067 +02:00 [INF] CORS policy execution failed.
+2025-12-15 15:07:43.067 +02:00 [INF] Request origin http://localhost:5065 does not have permission to access the resource.
+2025-12-15 15:07:43.069 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-12-15 15:07:43.072 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.AuthController.Login (TaskManager.API)'
+2025-12-15 15:07:43.089 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskManager.Application.Commands.LoginUser.LoginUserCommand) on controller TaskManager.API.Controllers.AuthController (TaskManager.API).
+2025-12-15 15:07:43.860 +02:00 [INF] Executed DbCommand (25ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE @__username_0 = [u].[Username]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-15 15:07:43.885 +02:00 [INF] Executed action TaskManager.API.Controllers.AuthController.Login (TaskManager.API) in 793.2208ms
+2025-12-15 15:07:43.885 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.AuthController.Login (TaskManager.API)'
+2025-12-15 15:07:43.887 +02:00 [ERR] HTTP POST /api/auth/login responded 500 in 817.5176 ms
+System.ArgumentException: Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+   at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+   at TaskManager.Infrastructure.Service.PasswordService.VerifyPassword(String hashedPassword, String plainPassword) in C:\Users\user\source\repos\TaskManager\TaskManager.Infrastructure\Service\PasswordService.cs:line 46
+   at TaskManager.Application.Commands.LoginUser.LoginUserCommandHandler.Handle(LoginUserCommand request, CancellationToken cancellationToken) in C:\Users\user\source\repos\TaskManager\TaskManager.Application\Commands\LoginUser\LoginUserCommandHandler.cs:line 31
+   at TaskManager.API.Controllers.AuthController.Login(LoginUserCommand command) in C:\Users\user\source\repos\TaskManager\TaskManager.API\Controllers\AuthController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-12-15 15:07:43.895 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+   at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+   at TaskManager.Infrastructure.Service.PasswordService.VerifyPassword(String hashedPassword, String plainPassword) in C:\Users\user\source\repos\TaskManager\TaskManager.Infrastructure\Service\PasswordService.cs:line 46
+   at TaskManager.Application.Commands.LoginUser.LoginUserCommandHandler.Handle(LoginUserCommand request, CancellationToken cancellationToken) in C:\Users\user\source\repos\TaskManager\TaskManager.Application\Commands\LoginUser\LoginUserCommandHandler.cs:line 31
+   at TaskManager.API.Controllers.AuthController.Login(LoginUserCommand command) in C:\Users\user\source\repos\TaskManager\TaskManager.API\Controllers\AuthController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-12-15 15:07:43.909 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/login - 500 null text/plain; charset=utf-8 849.4841ms
+2025-12-15 15:09:06.986 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 15:09:06.988 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 1.0894ms
+2025-12-15 15:09:07.000 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 15:09:07.000 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.3647ms
+2025-12-15 15:09:07.050 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 15:09:07.052 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.7139ms
+2025-12-15 15:09:38.140 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/login - application/json-patch+json 48
+2025-12-15 15:09:38.142 +02:00 [INF] CORS policy execution failed.
+2025-12-15 15:09:38.142 +02:00 [INF] Request origin http://localhost:5065 does not have permission to access the resource.
+2025-12-15 15:09:38.142 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.AuthController.Login (TaskManager.API)'
+2025-12-15 15:09:38.142 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskManager.Application.Commands.LoginUser.LoginUserCommand) on controller TaskManager.API.Controllers.AuthController (TaskManager.API).
+2025-12-15 15:09:38.163 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE @__username_0 = [u].[Username]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-15 15:09:38.164 +02:00 [INF] Executed action TaskManager.API.Controllers.AuthController.Login (TaskManager.API) in 21.6755ms
+2025-12-15 15:09:38.164 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.AuthController.Login (TaskManager.API)'
+2025-12-15 15:09:38.165 +02:00 [ERR] HTTP POST /api/auth/login responded 500 in 22.8053 ms
+System.ArgumentException: Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+   at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+   at TaskManager.Infrastructure.Service.PasswordService.VerifyPassword(String hashedPassword, String plainPassword) in C:\Users\user\source\repos\TaskManager\TaskManager.Infrastructure\Service\PasswordService.cs:line 46
+   at TaskManager.Application.Commands.LoginUser.LoginUserCommandHandler.Handle(LoginUserCommand request, CancellationToken cancellationToken) in C:\Users\user\source\repos\TaskManager\TaskManager.Application\Commands\LoginUser\LoginUserCommandHandler.cs:line 31
+   at TaskManager.API.Controllers.AuthController.Login(LoginUserCommand command) in C:\Users\user\source\repos\TaskManager\TaskManager.API\Controllers\AuthController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-12-15 15:09:38.167 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentException: Offset and length were out of bounds for the array or count is greater than the number of elements from index to the end of the source collection.
+   at System.Buffer.BlockCopy(Array src, Int32 srcOffset, Array dst, Int32 dstOffset, Int32 count)
+   at TaskManager.Infrastructure.Service.PasswordService.VerifyPassword(String hashedPassword, String plainPassword) in C:\Users\user\source\repos\TaskManager\TaskManager.Infrastructure\Service\PasswordService.cs:line 46
+   at TaskManager.Application.Commands.LoginUser.LoginUserCommandHandler.Handle(LoginUserCommand request, CancellationToken cancellationToken) in C:\Users\user\source\repos\TaskManager\TaskManager.Application\Commands\LoginUser\LoginUserCommandHandler.cs:line 31
+   at TaskManager.API.Controllers.AuthController.Login(LoginUserCommand command) in C:\Users\user\source\repos\TaskManager\TaskManager.API\Controllers\AuthController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-12-15 15:09:38.170 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/login - 500 null text/plain; charset=utf-8 30.2342ms
+2025-12-15 15:18:24.799 +02:00 [INF] Application is shutting down...
+2025-12-15 15:18:34.934 +02:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-15 15:18:35.019 +02:00 [INF] Now listening on: http://localhost:5065
+2025-12-15 15:18:35.020 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-15 15:18:35.021 +02:00 [INF] Hosting environment: Development
+2025-12-15 15:18:35.021 +02:00 [INF] Content root path: C:\Users\user\source\repos\TaskManager\TaskManager.API
+2025-12-15 15:18:35.166 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 15:18:35.279 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 114.4452ms
+2025-12-15 15:18:35.291 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 15:18:35.294 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 3.4212ms
+2025-12-15 15:18:35.362 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 15:18:35.451 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 88.8768ms
+2025-12-15 15:18:50.112 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/login - application/json-patch+json 48
+2025-12-15 15:18:50.120 +02:00 [INF] CORS policy execution failed.
+2025-12-15 15:18:50.121 +02:00 [INF] Request origin http://localhost:5065 does not have permission to access the resource.
+2025-12-15 15:18:50.123 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-12-15 15:18:50.125 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.AuthController.Login (TaskManager.API)'
+2025-12-15 15:18:50.142 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskManager.Application.Commands.LoginUser.LoginUserCommand) on controller TaskManager.API.Controllers.AuthController (TaskManager.API).
+2025-12-15 15:18:50.937 +02:00 [INF] Executed DbCommand (27ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE @__username_0 = [u].[Username]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-15 15:18:50.986 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[Username], [u].[isActive]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2025-12-15 15:18:51.090 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Commands.LoginUser.LoginUserResponse'.
+2025-12-15 15:18:51.108 +02:00 [INF] Executed action TaskManager.API.Controllers.AuthController.Login (TaskManager.API) in 964.2176ms
+2025-12-15 15:18:51.109 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.AuthController.Login (TaskManager.API)'
+2025-12-15 15:18:51.111 +02:00 [INF] HTTP POST /api/auth/login responded 200 in 987.5848 ms
+2025-12-15 15:18:51.117 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/login - 200 417 application/json; charset=utf-8 1004.9892ms
+2025-12-15 15:21:05.382 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 15:21:05.383 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 1.0855ms
+2025-12-15 15:21:05.397 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 15:21:05.398 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.3917ms
+2025-12-15 15:21:05.460 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 15:21:05.462 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 2.1121ms
+2025-12-15 15:23:24.419 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 15:23:24.420 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 1.3495ms
+2025-12-15 15:23:24.433 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 15:23:24.433 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.3294ms
+2025-12-15 15:23:24.481 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 15:23:24.483 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 2.2238ms
+2025-12-15 15:23:28.120 +02:00 [INF] Application is shutting down...
+2025-12-15 15:23:35.878 +02:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-15 15:23:35.960 +02:00 [INF] Now listening on: http://localhost:5065
+2025-12-15 15:23:35.962 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-15 15:23:35.962 +02:00 [INF] Hosting environment: Development
+2025-12-15 15:23:35.963 +02:00 [INF] Content root path: C:\Users\user\source\repos\TaskManager\TaskManager.API
+2025-12-15 15:23:36.103 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 15:23:36.214 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 112.4865ms
+2025-12-15 15:23:36.224 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 15:23:36.227 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 3.1316ms
+2025-12-15 15:23:36.296 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 15:23:36.387 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 91.6259ms
+2025-12-15 15:23:48.207 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/register - application/json-patch+json 77
+2025-12-15 15:23:48.215 +02:00 [INF] CORS policy execution failed.
+2025-12-15 15:23:48.216 +02:00 [INF] Request origin http://localhost:5065 does not have permission to access the resource.
+2025-12-15 15:23:48.219 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-12-15 15:23:48.223 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.AuthController.Register (TaskManager.API)'
+2025-12-15 15:23:48.242 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(TaskManager.Application.Commands.RegisterUser.RegisterUserCommand) on controller TaskManager.API.Controllers.AuthController (TaskManager.API).
+2025-12-15 15:23:49.076 +02:00 [INF] Executed DbCommand (32ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE @__username_0 = [u].[Username]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-15 15:23:49.102 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE @__email_0 = [u].[Email]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-15 15:23:49.311 +02:00 [INF] Executed DbCommand (37ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [Email], [PasswordHash], [Username], [isActive])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-12-15 15:23:49.335 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Commands.RegisterUser.RegisterUserResponse'.
+2025-12-15 15:23:49.357 +02:00 [INF] Executed action TaskManager.API.Controllers.AuthController.Register (TaskManager.API) in 1111.8008ms
+2025-12-15 15:23:49.358 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.AuthController.Register (TaskManager.API)'
+2025-12-15 15:23:49.361 +02:00 [INF] HTTP POST /api/auth/register responded 200 in 1140.4852 ms
+2025-12-15 15:23:49.368 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/register - 200 412 application/json; charset=utf-8 1160.5551ms
+2025-12-15 15:24:02.447 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/login - application/json-patch+json 48
+2025-12-15 15:24:02.449 +02:00 [INF] CORS policy execution failed.
+2025-12-15 15:24:02.449 +02:00 [INF] Request origin http://localhost:5065 does not have permission to access the resource.
+2025-12-15 15:24:02.449 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.AuthController.Login (TaskManager.API)'
+2025-12-15 15:24:02.454 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskManager.Application.Commands.LoginUser.LoginUserCommand) on controller TaskManager.API.Controllers.AuthController (TaskManager.API).
+2025-12-15 15:24:02.474 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE @__username_0 = [u].[Username]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-15 15:24:02.499 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[Username], [u].[isActive]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2025-12-15 15:24:02.560 +02:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-12-15 15:24:02.569 +02:00 [INF] Executed action TaskManager.API.Controllers.AuthController.Login (TaskManager.API) in 115.2769ms
+2025-12-15 15:24:02.570 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.AuthController.Login (TaskManager.API)'
+2025-12-15 15:24:02.570 +02:00 [INF] HTTP POST /api/auth/login responded 401 in 120.8343 ms
+2025-12-15 15:24:02.570 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/login - 401 165 application/problem+json; charset=utf-8 123.4817ms
+2025-12-15 15:24:08.787 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/login - application/json-patch+json 46
+2025-12-15 15:24:08.788 +02:00 [INF] CORS policy execution failed.
+2025-12-15 15:24:08.789 +02:00 [INF] Request origin http://localhost:5065 does not have permission to access the resource.
+2025-12-15 15:24:08.789 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.AuthController.Login (TaskManager.API)'
+2025-12-15 15:24:08.789 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskManager.Application.Commands.LoginUser.LoginUserCommand) on controller TaskManager.API.Controllers.AuthController (TaskManager.API).
+2025-12-15 15:24:08.873 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE @__username_0 = [u].[Username]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-15 15:24:08.874 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[Username], [u].[isActive]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2025-12-15 15:24:08.926 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Commands.LoginUser.LoginUserResponse'.
+2025-12-15 15:24:08.927 +02:00 [INF] Executed action TaskManager.API.Controllers.AuthController.Login (TaskManager.API) in 138.2267ms
+2025-12-15 15:24:08.928 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.AuthController.Login (TaskManager.API)'
+2025-12-15 15:24:08.928 +02:00 [INF] HTTP POST /api/auth/login responded 200 in 138.9616 ms
+2025-12-15 15:24:08.928 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/login - 200 412 application/json; charset=utf-8 140.5155ms
+2025-12-15 15:34:15.276 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 15:34:15.277 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 1.194ms
+2025-12-15 15:34:15.287 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 15:34:15.288 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.7238ms
+2025-12-15 15:34:15.432 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 15:34:15.435 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 2.5068ms
+2025-12-15 15:40:59.038 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 15:40:59.039 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 1.3282ms
+2025-12-15 15:40:59.050 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 15:40:59.050 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 0.3091ms
+2025-12-15 15:40:59.243 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 15:40:59.245 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 2.1622ms
+2025-12-15 16:42:47.504 +02:00 [INF] Application is shutting down...
+2025-12-15 16:42:59.951 +02:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-15 16:43:00.055 +02:00 [INF] Now listening on: http://localhost:5065
+2025-12-15 16:43:00.056 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-15 16:43:00.057 +02:00 [INF] Hosting environment: Development
+2025-12-15 16:43:00.057 +02:00 [INF] Content root path: C:\Users\user\source\repos\TaskManager\TaskManager.API
+2025-12-15 16:43:00.209 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 16:43:00.328 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 120.8244ms
+2025-12-15 16:43:00.339 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 16:43:00.342 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 3.403ms
+2025-12-15 16:43:00.502 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 16:43:00.586 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 83.5979ms
+2025-12-15 16:43:24.303 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/register - application/json-patch+json 80
+2025-12-15 16:43:24.310 +02:00 [INF] CORS policy execution failed.
+2025-12-15 16:43:24.310 +02:00 [INF] Request origin http://localhost:5065 does not have permission to access the resource.
+2025-12-15 16:43:24.312 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-12-15 16:43:24.315 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.AuthController.Register (TaskManager.API)'
+2025-12-15 16:43:24.333 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(TaskManager.Application.Commands.RegisterUser.RegisterUserCommand) on controller TaskManager.API.Controllers.AuthController (TaskManager.API).
+2025-12-15 16:43:25.187 +02:00 [INF] Executed DbCommand (27ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE @__username_0 = [u].[Username]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-15 16:43:25.219 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE @__email_0 = [u].[Email]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-15 16:43:25.395 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [Email], [PasswordHash], [SecurityGroupId], [Username], [isActive])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-12-15 16:43:25.437 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[GroupName]
+FROM [SecurityGroups] AS [s]
+WHERE [s].[Id] = @__id_0
+2025-12-15 16:43:25.444 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Commands.RegisterUser.RegisterUserResponse'.
+2025-12-15 16:43:25.455 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[SecurityGroupId], [u].[Username], [u].[isActive]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+2025-12-15 16:43:25.463 +02:00 [INF] Executed action TaskManager.API.Controllers.AuthController.Register (TaskManager.API) in 1126.6328ms
+2025-12-15 16:43:25.464 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.AuthController.Register (TaskManager.API)'
+2025-12-15 16:43:25.466 +02:00 [INF] HTTP POST /api/auth/register responded 200 in 1153.4645 ms
+2025-12-15 16:43:25.473 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/register - 200 417 application/json; charset=utf-8 1170.5205ms
+2025-12-15 16:52:11.375 +02:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-15 16:52:11.460 +02:00 [INF] Now listening on: http://localhost:5065
+2025-12-15 16:52:11.462 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-15 16:52:11.462 +02:00 [INF] Hosting environment: Development
+2025-12-15 16:52:11.462 +02:00 [INF] Content root path: C:\Users\user\source\repos\TaskManager\TaskManager.API
+2025-12-15 16:52:11.605 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/index.html - null null
+2025-12-15 16:52:11.730 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/index.html - 200 null text/html;charset=utf-8 126.1445ms
+2025-12-15 16:52:11.736 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-15 16:52:11.739 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/_framework/aspnetcore-browser-refresh.js - 200 16481 application/javascript; charset=utf-8 3.4771ms
+2025-12-15 16:52:11.802 +02:00 [INF] Request starting HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - null null
+2025-12-15 16:52:11.890 +02:00 [INF] Request finished HTTP/1.1 GET http://localhost:5065/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 87.6368ms
+2025-12-15 16:52:26.654 +02:00 [INF] Request starting HTTP/1.1 POST http://localhost:5065/api/auth/register - application/json-patch+json 80
+2025-12-15 16:52:26.662 +02:00 [INF] CORS policy execution failed.
+2025-12-15 16:52:26.662 +02:00 [INF] Request origin http://localhost:5065 does not have permission to access the resource.
+2025-12-15 16:52:26.664 +02:00 [WRN] Failed to determine the https port for redirect.
+2025-12-15 16:52:26.666 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.AuthController.Register (TaskManager.API)'
+2025-12-15 16:52:26.684 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(TaskManager.Application.Commands.RegisterUser.RegisterUserCommand) on controller TaskManager.API.Controllers.AuthController (TaskManager.API).
+2025-12-15 16:52:27.534 +02:00 [INF] Executed DbCommand (25ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE @__username_0 = [u].[Username]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-15 16:52:27.559 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE @__email_0 = [u].[Email]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-15 16:52:27.733 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Int32), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [Email], [PasswordHash], [SecurityGroupId], [Username], [isActive])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-12-15 16:52:27.773 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[GroupName]
+FROM [SecurityGroups] AS [s]
+WHERE [s].[Id] = @__id_0
+2025-12-15 16:52:27.781 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Commands.RegisterUser.RegisterUserResponse'.
+2025-12-15 16:52:27.792 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[SecurityGroupId], [u].[Username], [u].[isActive]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+2025-12-15 16:52:27.801 +02:00 [INF] Executed action TaskManager.API.Controllers.AuthController.Register (TaskManager.API) in 1114.2537ms
+2025-12-15 16:52:27.801 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.AuthController.Register (TaskManager.API)'
+2025-12-15 16:52:27.803 +02:00 [INF] HTTP POST /api/auth/register responded 200 in 1138.6504 ms
+2025-12-15 16:52:27.810 +02:00 [INF] Request finished HTTP/1.1 POST http://localhost:5065/api/auth/register - 200 417 application/json; charset=utf-8 1155.8194ms
