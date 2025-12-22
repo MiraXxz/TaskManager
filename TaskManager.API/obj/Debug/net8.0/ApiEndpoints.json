@@ -34,7 +34,7 @@
   {
     "ContainingType": "TaskManager.API.Controllers.UserController",
     "Method": "GetUsers",
-    "RelativePath": "api/user",
+    "RelativePath": "api/users",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -48,6 +48,22 @@
         "Name": "pageNumber",
         "Type": "System.Int32",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TaskManager.API.Controllers.UserController",
+    "Method": "AssignSecurityGroup",
+    "RelativePath": "api/users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "assignRequest",
+        "Type": "TaskManager.Application.Commands.AssignSecurityGroup.AssignSecurityGroupCommand",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

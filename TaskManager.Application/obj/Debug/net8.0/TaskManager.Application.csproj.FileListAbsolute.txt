@@ -13,3 +13,4 @@ C:\Users\user\source\repos\TaskManager\TaskManager.Application\obj\Debug\net8.0\
 C:\Users\user\source\repos\TaskManager\TaskManager.Application\obj\Debug\net8.0\refint\TaskManager.Application.dll
 C:\Users\user\source\repos\TaskManager\TaskManager.Application\obj\Debug\net8.0\TaskManager.Application.pdb
 C:\Users\user\source\repos\TaskManager\TaskManager.Application\obj\Debug\net8.0\ref\TaskManager.Application.dll
+C:\Users\user\source\repos\TaskManager\TaskManager.Application\obj\Debug\net8.0\TaskManager.Application.sourcelink.json

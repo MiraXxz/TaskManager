@@ -653,3 +653,118 @@ FROM [Users] AS [u]
 2025-12-16 12:05:49.877 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API)'
 2025-12-16 12:05:49.878 +02:00 [INF] HTTP GET /api/user responded 200 in 16.9985 ms
 2025-12-16 12:05:49.880 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/user?pageSize=10&pageNumber=1 - 200 1393 application/json; charset=utf-8 27.5204ms
+2025-12-16 13:53:12.437 +02:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-16 13:53:12.704 +02:00 [INF] Now listening on: https://localhost:7245
+2025-12-16 13:53:12.707 +02:00 [INF] Now listening on: http://localhost:5065
+2025-12-16 13:53:12.811 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-16 13:53:12.813 +02:00 [INF] Hosting environment: Development
+2025-12-16 13:53:12.813 +02:00 [INF] Content root path: C:\Users\user\source\repos\TaskManager\TaskManager.API
+2025-12-16 13:53:12.993 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/index.html - null null
+2025-12-16 13:53:13.213 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/index.html - 200 null text/html;charset=utf-8 226.9268ms
+2025-12-16 13:53:13.220 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_vs/browserLink - null null
+2025-12-16 13:53:13.220 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-16 13:53:13.233 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 13.696ms
+2025-12-16 13:53:13.260 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.0009ms
+2025-12-16 13:53:13.295 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - null null
+2025-12-16 13:53:13.314 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.3835ms
+2025-12-16 14:17:40.184 +02:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-16 14:17:40.546 +02:00 [INF] Now listening on: https://localhost:7245
+2025-12-16 14:17:40.547 +02:00 [INF] Now listening on: http://localhost:5065
+2025-12-16 14:17:40.781 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-16 14:17:40.782 +02:00 [INF] Hosting environment: Development
+2025-12-16 14:17:40.783 +02:00 [INF] Content root path: C:\Users\user\source\repos\TaskManager\TaskManager.API
+2025-12-16 14:17:41.042 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/index.html - null null
+2025-12-16 14:17:41.299 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/index.html - 200 null text/html;charset=utf-8 265.2786ms
+2025-12-16 14:17:41.305 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_vs/browserLink - null null
+2025-12-16 14:17:41.305 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-16 14:17:41.321 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 16.1671ms
+2025-12-16 14:17:41.350 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.9262ms
+2025-12-16 14:17:41.389 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - null null
+2025-12-16 14:17:41.414 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 25.7341ms
+2025-12-16 14:17:56.987 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/users - null null
+2025-12-16 14:17:57.004 +02:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2025-12-16 14:17:57.010 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-12-16 14:17:57.014 +02:00 [INF] HTTP GET /api/users responded 401 in 13.3162 ms
+2025-12-16 14:17:57.017 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/users - 401 0 null 30.9251ms
+2025-12-16 14:18:25.388 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7245/api/auth/login - application/json-patch+json 48
+2025-12-16 14:18:25.401 +02:00 [INF] CORS policy execution failed.
+2025-12-16 14:18:25.402 +02:00 [INF] Request origin https://localhost:7245 does not have permission to access the resource.
+2025-12-16 14:18:25.405 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.AuthController.Login (TaskManager.API)'
+2025-12-16 14:18:25.429 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskManager.Application.Commands.LoginUser.LoginUserCommand) on controller TaskManager.API.Controllers.AuthController (TaskManager.API).
+2025-12-16 14:18:26.623 +02:00 [INF] Executed DbCommand (52ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE @__username_0 = [u].[Username]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-16 14:18:26.696 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[SecurityGroupId], [u].[Username], [u].[isActive]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2025-12-16 14:18:26.898 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__user_SecurityGroupId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[GroupName], [t0].[RoleId], [t0].[SecurityGroupId], [t0].[Id], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [s].[Id], [s].[GroupName]
+    FROM [SecurityGroups] AS [s]
+    WHERE [s].[Id] = @__user_SecurityGroupId_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[RoleId], [s0].[SecurityGroupId], [r].[Id], [r].[RoleName]
+    FROM [SecurityGroupRoles] AS [s0]
+    INNER JOIN [Roles] AS [r] ON [s0].[RoleId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[SecurityGroupId]
+ORDER BY [t].[Id], [t0].[RoleId], [t0].[SecurityGroupId]
+2025-12-16 14:18:26.984 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Commands.LoginUser.LoginUserResponse'.
+2025-12-16 14:18:27.010 +02:00 [INF] Executed action TaskManager.API.Controllers.AuthController.Login (TaskManager.API) in 1575.4593ms
+2025-12-16 14:18:27.013 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.AuthController.Login (TaskManager.API)'
+2025-12-16 14:18:27.014 +02:00 [INF] HTTP POST /api/auth/login responded 200 in 1611.0336 ms
+2025-12-16 14:18:27.021 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7245/api/auth/login - 200 438 application/json; charset=utf-8 1632.7844ms
+2025-12-16 14:18:56.757 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/users - null null
+2025-12-16 14:18:56.802 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API)'
+2025-12-16 14:18:56.811 +02:00 [INF] Route matched with {action = "GetUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUsers(TaskManager.Application.Queries.GetUsers.GetUsersQuery) on controller TaskManager.API.Controllers.UserController (TaskManager.API).
+2025-12-16 14:18:56.844 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[SecurityGroupId], [u].[Username], [u].[isActive]
+FROM [Users] AS [u]
+2025-12-16 14:18:56.851 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Queries.GetUsers.GetUsersRepsonse'.
+2025-12-16 14:18:56.864 +02:00 [INF] Executed action TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API) in 50.1224ms
+2025-12-16 14:18:56.867 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API)'
+2025-12-16 14:18:56.868 +02:00 [INF] HTTP GET /api/users responded 200 in 67.0058 ms
+2025-12-16 14:18:56.869 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/users - 200 709 application/json; charset=utf-8 113.2726ms
+2025-12-16 14:19:21.655 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7245/api/users - application/json-patch+json 41
+2025-12-16 14:19:21.667 +02:00 [INF] CORS policy execution failed.
+2025-12-16 14:19:21.668 +02:00 [INF] Request origin https://localhost:7245 does not have permission to access the resource.
+2025-12-16 14:19:21.672 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.UserController.AssignSecurityGroup (TaskManager.API)'
+2025-12-16 14:19:21.677 +02:00 [INF] Route matched with {action = "AssignSecurityGroup", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AssignSecurityGroup(TaskManager.Application.Commands.AssignSecurityGroup.AssignSecurityGroupCommand) on controller TaskManager.API.Controllers.UserController (TaskManager.API).
+2025-12-16 14:19:21.739 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [s].[Id], [s].[GroupName]
+FROM [SecurityGroups] AS [s]
+WHERE [s].[Id] = @__id_0
+2025-12-16 14:19:21.746 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[SecurityGroupId], [u].[Username], [u].[isActive]
+FROM [Users] AS [u]
+WHERE [u].[Id] = @__id_0
+2025-12-16 14:19:21.821 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Users] SET [SecurityGroupId] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;
+2025-12-16 14:19:21.834 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Commands.AssignSecurityGroup.AssignSecurityGroupResponse'.
+2025-12-16 14:19:21.837 +02:00 [INF] Executed action TaskManager.API.Controllers.UserController.AssignSecurityGroup (TaskManager.API) in 157.9546ms
+2025-12-16 14:19:21.840 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.UserController.AssignSecurityGroup (TaskManager.API)'
+2025-12-16 14:19:21.842 +02:00 [INF] HTTP POST /api/users responded 200 in 170.7149 ms
+2025-12-16 14:19:21.844 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7245/api/users - 200 52 application/json; charset=utf-8 188.5407ms
+2025-12-16 14:19:31.689 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/users - null null
+2025-12-16 14:19:31.693 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API)'
+2025-12-16 14:19:31.694 +02:00 [INF] Route matched with {action = "GetUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUsers(TaskManager.Application.Queries.GetUsers.GetUsersQuery) on controller TaskManager.API.Controllers.UserController (TaskManager.API).
+2025-12-16 14:19:31.700 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[SecurityGroupId], [u].[Username], [u].[isActive]
+FROM [Users] AS [u]
+2025-12-16 14:19:31.702 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Queries.GetUsers.GetUsersRepsonse'.
+2025-12-16 14:19:31.704 +02:00 [INF] Executed action TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API) in 8.2669ms
+2025-12-16 14:19:31.705 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API)'
+2025-12-16 14:19:31.706 +02:00 [INF] HTTP GET /api/users responded 200 in 12.7659 ms
+2025-12-16 14:19:31.707 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/users - 200 706 application/json; charset=utf-8 17.9053ms

@@ -17,3 +17,4 @@ C:\Users\user\source\repos\TaskManager\TaskManager.Infrastructure\obj\Debug\net8
 C:\Users\user\source\repos\TaskManager\TaskManager.Infrastructure\obj\Debug\net8.0\TaskManager.Infrastructure.pdb
 C:\Users\user\source\repos\TaskManager\TaskManager.Infrastructure\obj\Debug\net8.0\TaskManager.Infrastructure.genruntimeconfig.cache
 C:\Users\user\source\repos\TaskManager\TaskManager.Infrastructure\obj\Debug\net8.0\ref\TaskManager.Infrastructure.dll
+C:\Users\user\source\repos\TaskManager\TaskManager.Infrastructure\obj\Debug\net8.0\TaskManager.Infrastructure.sourcelink.json
