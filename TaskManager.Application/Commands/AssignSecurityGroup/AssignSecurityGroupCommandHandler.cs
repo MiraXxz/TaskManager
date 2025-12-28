@@ -10,14 +10,14 @@ namespace TaskManager.Application.Commands.AssignSecurityGroup
 {
     internal class AssignSecurityGroupCommandHandler : IRequestHandler<AssignSecurityGroupCommand, AssignSecurityGroupResponse>
     {
-        private readonly IUserRepository _userRepo;
-        public AssignSecurityGroupCommandHandler(IUserRepository userRepo)
+        private readonly ISecurityGroupRepository _sgRepo;
+        public AssignSecurityGroupCommandHandler(ISecurityGroupRepository sgRepo)
         {
-            _userRepo = userRepo;
+            _sgRepo = sgRepo;
         }
         public async Task<AssignSecurityGroupResponse> Handle(AssignSecurityGroupCommand request, CancellationToken cancellationToken)
         {
-            await _userRepo.AssignSecurityGroupAsync(request.userId, request.SecurityGroupId, cancellationToken);
+            await _sgRepo.AssignSecurityGroupAsync(request.userId, request.SecurityGroupId, cancellationToken);
 
             return new AssignSecurityGroupResponse()
             {

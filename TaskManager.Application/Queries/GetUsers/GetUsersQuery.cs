@@ -16,11 +16,11 @@ namespace TaskManager.Application.Queries.GetUsers
 
     public class GetUsersRepsonse
     {
-        public List<GetUserResponse> listData = [];
+        public List<UserItem> listData = [];
         public int rowsCount = 0;
     }
 
-    public class GetUserResponse
+    public class UserItem
     {
         public int Id { get; set; }
         public string Username { get; set; }

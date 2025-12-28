@@ -30,7 +30,7 @@ namespace TaskManager.Application.Queries.GetUsers
                 users = users.Skip(skip).Take(request.pageSize).ToList();
             }
 
-            var respUsers = users.ToList().Select(u => _mapper.Map<GetUserResponse>(u)).ToList();
+            var respUsers = users.ToList().Select(u => _mapper.Map<UserItem>(u)).ToList();
             GetUsersRepsonse resp = new GetUsersRepsonse();
             resp.listData = respUsers;
             resp.rowsCount = count; 

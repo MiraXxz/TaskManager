@@ -1,0 +1,561 @@
+2025-12-25 11:54:18.910 +02:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-25 11:54:19.217 +02:00 [INF] Now listening on: https://localhost:7245
+2025-12-25 11:54:19.220 +02:00 [INF] Now listening on: http://localhost:5065
+2025-12-25 11:54:19.323 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-25 11:54:19.324 +02:00 [INF] Hosting environment: Development
+2025-12-25 11:54:19.325 +02:00 [INF] Content root path: C:\Users\user\source\repos\TaskManager\TaskManager.API
+2025-12-25 11:54:20.618 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/index.html - null null
+2025-12-25 11:54:20.917 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/index.html - 200 null text/html;charset=utf-8 306.6622ms
+2025-12-25 11:54:20.984 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_vs/browserLink - null null
+2025-12-25 11:54:20.984 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-25 11:54:21.002 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 18.0543ms
+2025-12-25 11:54:21.042 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.4253ms
+2025-12-25 11:54:21.071 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - null null
+2025-12-25 11:54:21.091 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.0098ms
+2025-12-25 11:54:39.050 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7245/api/auth/login - null null
+2025-12-25 11:54:39.059 +02:00 [INF] CORS policy execution successful.
+2025-12-25 11:54:39.062 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7245/api/auth/login - 204 null null 12.5544ms
+2025-12-25 11:54:39.064 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7245/api/auth/login - application/json 39
+2025-12-25 11:54:39.069 +02:00 [INF] CORS policy execution successful.
+2025-12-25 11:54:39.074 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.AuthController.Login (TaskManager.API)'
+2025-12-25 11:54:39.095 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskManager.Application.Commands.LoginUser.LoginUserCommand) on controller TaskManager.API.Controllers.AuthController (TaskManager.API).
+2025-12-25 11:54:40.406 +02:00 [INF] Executed DbCommand (64ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE @__username_0 = [u].[Username]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-25 11:54:40.482 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[SecurityGroupId], [u].[Username], [u].[isActive]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2025-12-25 11:54:40.722 +02:00 [INF] Executed DbCommand (19ms) [Parameters=[@__user_SecurityGroupId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[GroupName], [t0].[RoleId], [t0].[SecurityGroupId], [t0].[Id], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [s].[Id], [s].[GroupName]
+    FROM [SecurityGroups] AS [s]
+    WHERE [s].[Id] = @__user_SecurityGroupId_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[RoleId], [s0].[SecurityGroupId], [r].[Id], [r].[RoleName]
+    FROM [SecurityGroupRoles] AS [s0]
+    INNER JOIN [Roles] AS [r] ON [s0].[RoleId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[SecurityGroupId]
+ORDER BY [t].[Id], [t0].[RoleId], [t0].[SecurityGroupId]
+2025-12-25 11:54:40.812 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Commands.LoginUser.LoginUserResponse'.
+2025-12-25 11:54:40.840 +02:00 [INF] Executed action TaskManager.API.Controllers.AuthController.Login (TaskManager.API) in 1739.3837ms
+2025-12-25 11:54:40.843 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.AuthController.Login (TaskManager.API)'
+2025-12-25 11:54:40.845 +02:00 [INF] HTTP POST /api/auth/login responded 200 in 1773.2521 ms
+2025-12-25 11:54:40.855 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7245/api/auth/login - 200 438 application/json; charset=utf-8 1790.4987ms
+2025-12-25 11:54:53.248 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/users?pageSize=10&pageNumber=1 - null null
+2025-12-25 11:54:53.249 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/users/securityGroups?pageSize=10&pageNumber=1 - null null
+2025-12-25 11:54:53.253 +02:00 [INF] CORS policy execution successful.
+2025-12-25 11:54:53.255 +02:00 [INF] CORS policy execution successful.
+2025-12-25 11:54:53.255 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API)'
+2025-12-25 11:54:53.256 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API)'
+2025-12-25 11:54:53.266 +02:00 [INF] Route matched with {action = "GetUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUsers(TaskManager.Application.Queries.GetUsers.GetUsersQuery) on controller TaskManager.API.Controllers.UserController (TaskManager.API).
+2025-12-25 11:54:53.266 +02:00 [INF] Route matched with {action = "GetSecurityGroups", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSecurityGroups(TaskManager.Application.Queries.GetSecurityGroups.SecurityGroupsQuery) on controller TaskManager.API.Controllers.UserController (TaskManager.API).
+2025-12-25 11:54:53.304 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[SecurityGroupId], [u].[Username], [u].[isActive]
+FROM [Users] AS [u]
+2025-12-25 11:54:53.313 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Queries.GetUsers.GetUsersRepsonse'.
+2025-12-25 11:54:53.315 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupName], [t].[RoleId], [t].[SecurityGroupId], [t].[Id], [t].[RoleName]
+FROM [SecurityGroups] AS [s]
+LEFT JOIN (
+    SELECT [s0].[RoleId], [s0].[SecurityGroupId], [r].[Id], [r].[RoleName]
+    FROM [SecurityGroupRoles] AS [s0]
+    INNER JOIN [Roles] AS [r] ON [s0].[RoleId] = [r].[Id]
+) AS [t] ON [s].[Id] = [t].[SecurityGroupId]
+ORDER BY [s].[Id], [t].[RoleId], [t].[SecurityGroupId]
+2025-12-25 11:54:53.325 +02:00 [INF] Executed action TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API) in 57.2957ms
+2025-12-25 11:54:53.327 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API)'
+2025-12-25 11:54:53.327 +02:00 [INF] HTTP GET /api/users responded 200 in 72.5085 ms
+2025-12-25 11:54:53.329 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/users?pageSize=10&pageNumber=1 - 200 1386 application/json; charset=utf-8 80.6228ms
+2025-12-25 11:54:53.346 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 11:54:53.355 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 11:54:53.358 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 11:54:53.361 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 11:54:53.364 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 11:54:53.366 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Queries.GetSecurityGroups.SecurityGroupsResponse'.
+2025-12-25 11:54:53.370 +02:00 [INF] Executed action TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API) in 100.2734ms
+2025-12-25 11:54:53.371 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API)'
+2025-12-25 11:54:53.372 +02:00 [INF] HTTP GET /api/users/securityGroups responded 200 in 116.7037 ms
+2025-12-25 11:54:53.374 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/users/securityGroups?pageSize=10&pageNumber=1 - 200 587 application/json; charset=utf-8 125.5601ms
+2025-12-25 13:37:26.106 +02:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-25 13:37:26.387 +02:00 [INF] Now listening on: https://localhost:7245
+2025-12-25 13:37:26.389 +02:00 [INF] Now listening on: http://localhost:5065
+2025-12-25 13:37:26.507 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-25 13:37:26.509 +02:00 [INF] Hosting environment: Development
+2025-12-25 13:37:26.513 +02:00 [INF] Content root path: C:\Users\user\source\repos\TaskManager\TaskManager.API
+2025-12-25 13:37:28.217 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/index.html - null null
+2025-12-25 13:37:28.596 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/index.html - 200 null text/html;charset=utf-8 396.114ms
+2025-12-25 13:37:28.650 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-25 13:37:28.651 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/_vs/browserLink - null null
+2025-12-25 13:37:28.659 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 8.4875ms
+2025-12-25 13:37:28.742 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/_vs/browserLink - 200 null text/javascript; charset=UTF-8 91.5304ms
+2025-12-25 13:37:28.782 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - null null
+2025-12-25 13:37:28.802 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.5139ms
+2025-12-25 13:44:42.104 +02:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7245/api/auth/login - null null
+2025-12-25 13:44:42.116 +02:00 [INF] CORS policy execution successful.
+2025-12-25 13:44:42.119 +02:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7245/api/auth/login - 204 null null 14.3416ms
+2025-12-25 13:44:42.124 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7245/api/auth/login - application/json 39
+2025-12-25 13:44:42.129 +02:00 [INF] CORS policy execution successful.
+2025-12-25 13:44:42.132 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.AuthController.Login (TaskManager.API)'
+2025-12-25 13:44:42.159 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(TaskManager.Application.Commands.LoginUser.LoginUserCommand) on controller TaskManager.API.Controllers.AuthController (TaskManager.API).
+2025-12-25 13:44:43.321 +02:00 [INF] Executed DbCommand (54ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE @__username_0 = [u].[Username]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-12-25 13:44:43.378 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__username_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[SecurityGroupId], [u].[Username], [u].[isActive]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2025-12-25 13:44:43.563 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@__user_SecurityGroupId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[GroupName], [t0].[RoleId], [t0].[SecurityGroupId], [t0].[Id], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [s].[Id], [s].[GroupName]
+    FROM [SecurityGroups] AS [s]
+    WHERE [s].[Id] = @__user_SecurityGroupId_0
+) AS [t]
+LEFT JOIN (
+    SELECT [s0].[RoleId], [s0].[SecurityGroupId], [r].[Id], [r].[RoleName]
+    FROM [SecurityGroupRoles] AS [s0]
+    INNER JOIN [Roles] AS [r] ON [s0].[RoleId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[SecurityGroupId]
+ORDER BY [t].[Id], [t0].[RoleId], [t0].[SecurityGroupId]
+2025-12-25 13:44:43.636 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Commands.LoginUser.LoginUserResponse'.
+2025-12-25 13:44:43.663 +02:00 [INF] Executed action TaskManager.API.Controllers.AuthController.Login (TaskManager.API) in 1498.5668ms
+2025-12-25 13:44:43.666 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.AuthController.Login (TaskManager.API)'
+2025-12-25 13:44:43.669 +02:00 [INF] HTTP POST /api/auth/login responded 200 in 1537.5255 ms
+2025-12-25 13:44:43.680 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7245/api/auth/login - 200 438 application/json; charset=utf-8 1556.0054ms
+2025-12-25 13:44:45.510 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/users?pageSize=10&pageNumber=1 - null null
+2025-12-25 13:44:45.511 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/users/securityGroups?pageSize=10&pageNumber=1 - null null
+2025-12-25 13:44:45.514 +02:00 [INF] CORS policy execution successful.
+2025-12-25 13:44:45.516 +02:00 [INF] CORS policy execution successful.
+2025-12-25 13:44:45.516 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API)'
+2025-12-25 13:44:45.517 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API)'
+2025-12-25 13:44:45.524 +02:00 [INF] Route matched with {action = "GetSecurityGroups", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSecurityGroups(TaskManager.Application.Queries.GetSecurityGroups.SecurityGroupsQuery) on controller TaskManager.API.Controllers.UserController (TaskManager.API).
+2025-12-25 13:44:45.524 +02:00 [INF] Route matched with {action = "GetUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUsers(TaskManager.Application.Queries.GetUsers.GetUsersQuery) on controller TaskManager.API.Controllers.UserController (TaskManager.API).
+2025-12-25 13:44:45.561 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[SecurityGroupId], [u].[Username], [u].[isActive]
+FROM [Users] AS [u]
+2025-12-25 13:44:45.571 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Queries.GetUsers.GetUsersRepsonse'.
+2025-12-25 13:44:45.572 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupName], [t].[RoleId], [t].[SecurityGroupId], [t].[Id], [t].[RoleName]
+FROM [SecurityGroups] AS [s]
+LEFT JOIN (
+    SELECT [s0].[RoleId], [s0].[SecurityGroupId], [r].[Id], [r].[RoleName]
+    FROM [SecurityGroupRoles] AS [s0]
+    INNER JOIN [Roles] AS [r] ON [s0].[RoleId] = [r].[Id]
+) AS [t] ON [s].[Id] = [t].[SecurityGroupId]
+ORDER BY [s].[Id], [t].[RoleId], [t].[SecurityGroupId]
+2025-12-25 13:44:45.584 +02:00 [INF] Executed action TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API) in 56.3757ms
+2025-12-25 13:44:45.585 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API)'
+2025-12-25 13:44:45.586 +02:00 [INF] HTTP GET /api/users responded 200 in 69.7441 ms
+2025-12-25 13:44:45.587 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/users?pageSize=10&pageNumber=1 - 200 1386 application/json; charset=utf-8 77.4099ms
+2025-12-25 13:44:45.600 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:44:45.607 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:44:45.610 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:44:45.613 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:44:45.616 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:44:45.618 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Queries.GetSecurityGroups.SecurityGroupsResponse'.
+2025-12-25 13:44:45.624 +02:00 [INF] Executed action TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API) in 98.5072ms
+2025-12-25 13:44:45.629 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API)'
+2025-12-25 13:44:45.630 +02:00 [INF] HTTP GET /api/users/securityGroups responded 200 in 113.4279 ms
+2025-12-25 13:44:45.634 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/users/securityGroups?pageSize=10&pageNumber=1 - 200 587 application/json; charset=utf-8 123.4021ms
+2025-12-25 13:45:45.726 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/users?pageSize=10&pageNumber=1 - null null
+2025-12-25 13:45:45.733 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/users/securityGroups?pageSize=10&pageNumber=1 - null null
+2025-12-25 13:45:45.771 +02:00 [INF] CORS policy execution successful.
+2025-12-25 13:45:45.778 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API)'
+2025-12-25 13:45:45.776 +02:00 [INF] CORS policy execution successful.
+2025-12-25 13:45:45.781 +02:00 [INF] Route matched with {action = "GetUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUsers(TaskManager.Application.Queries.GetUsers.GetUsersQuery) on controller TaskManager.API.Controllers.UserController (TaskManager.API).
+2025-12-25 13:45:45.781 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API)'
+2025-12-25 13:45:45.784 +02:00 [INF] Route matched with {action = "GetSecurityGroups", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSecurityGroups(TaskManager.Application.Queries.GetSecurityGroups.SecurityGroupsQuery) on controller TaskManager.API.Controllers.UserController (TaskManager.API).
+2025-12-25 13:45:45.897 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[SecurityGroupId], [u].[Username], [u].[isActive]
+FROM [Users] AS [u]
+2025-12-25 13:45:45.908 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Queries.GetUsers.GetUsersRepsonse'.
+2025-12-25 13:45:45.912 +02:00 [INF] Executed action TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API) in 129.3704ms
+2025-12-25 13:45:45.913 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API)'
+2025-12-25 13:45:45.915 +02:00 [INF] HTTP GET /api/users responded 200 in 136.5656 ms
+2025-12-25 13:45:45.916 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/users?pageSize=10&pageNumber=1 - 200 1386 application/json; charset=utf-8 190.4882ms
+2025-12-25 13:45:45.918 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupName], [t].[RoleId], [t].[SecurityGroupId], [t].[Id], [t].[RoleName]
+FROM [SecurityGroups] AS [s]
+LEFT JOIN (
+    SELECT [s0].[RoleId], [s0].[SecurityGroupId], [r].[Id], [r].[RoleName]
+    FROM [SecurityGroupRoles] AS [s0]
+    INNER JOIN [Roles] AS [r] ON [s0].[RoleId] = [r].[Id]
+) AS [t] ON [s].[Id] = [t].[SecurityGroupId]
+ORDER BY [s].[Id], [t].[RoleId], [t].[SecurityGroupId]
+2025-12-25 13:45:45.926 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:45:45.929 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:45:45.932 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:45:45.936 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:45:45.939 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:45:45.942 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Queries.GetSecurityGroups.SecurityGroupsResponse'.
+2025-12-25 13:45:45.945 +02:00 [INF] Executed action TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API) in 156.46ms
+2025-12-25 13:45:45.949 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API)'
+2025-12-25 13:45:45.950 +02:00 [INF] HTTP GET /api/users/securityGroups responded 200 in 169.2035 ms
+2025-12-25 13:45:45.956 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/users/securityGroups?pageSize=10&pageNumber=1 - 200 587 application/json; charset=utf-8 223.6557ms
+2025-12-25 13:47:58.237 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/users?pageSize=10&pageNumber=1 - null null
+2025-12-25 13:47:58.238 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/users/securityGroups?pageSize=10&pageNumber=1 - null null
+2025-12-25 13:47:58.243 +02:00 [INF] CORS policy execution successful.
+2025-12-25 13:47:58.245 +02:00 [INF] CORS policy execution successful.
+2025-12-25 13:47:58.246 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API)'
+2025-12-25 13:47:58.246 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API)'
+2025-12-25 13:47:58.248 +02:00 [INF] Route matched with {action = "GetSecurityGroups", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSecurityGroups(TaskManager.Application.Queries.GetSecurityGroups.SecurityGroupsQuery) on controller TaskManager.API.Controllers.UserController (TaskManager.API).
+2025-12-25 13:47:58.251 +02:00 [INF] Route matched with {action = "GetUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUsers(TaskManager.Application.Queries.GetUsers.GetUsersQuery) on controller TaskManager.API.Controllers.UserController (TaskManager.API).
+2025-12-25 13:47:58.267 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[SecurityGroupId], [u].[Username], [u].[isActive]
+FROM [Users] AS [u]
+2025-12-25 13:47:58.287 +02:00 [INF] Executed DbCommand (29ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupName], [t].[RoleId], [t].[SecurityGroupId], [t].[Id], [t].[RoleName]
+FROM [SecurityGroups] AS [s]
+LEFT JOIN (
+    SELECT [s0].[RoleId], [s0].[SecurityGroupId], [r].[Id], [r].[RoleName]
+    FROM [SecurityGroupRoles] AS [s0]
+    INNER JOIN [Roles] AS [r] ON [s0].[RoleId] = [r].[Id]
+) AS [t] ON [s].[Id] = [t].[SecurityGroupId]
+ORDER BY [s].[Id], [t].[RoleId], [t].[SecurityGroupId]
+2025-12-25 13:47:58.288 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Queries.GetUsers.GetUsersRepsonse'.
+2025-12-25 13:47:58.292 +02:00 [INF] Executed action TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API) in 38.0801ms
+2025-12-25 13:47:58.297 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:47:58.299 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API)'
+2025-12-25 13:47:58.301 +02:00 [INF] HTTP GET /api/users responded 200 in 55.0451 ms
+2025-12-25 13:47:58.301 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:47:58.303 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/users?pageSize=10&pageNumber=1 - 200 1386 application/json; charset=utf-8 66.2316ms
+2025-12-25 13:47:58.307 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:47:58.310 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:47:58.313 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:47:58.316 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Queries.GetSecurityGroups.SecurityGroupsResponse'.
+2025-12-25 13:47:58.318 +02:00 [INF] Executed action TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API) in 65.1638ms
+2025-12-25 13:47:58.319 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API)'
+2025-12-25 13:47:58.320 +02:00 [INF] HTTP GET /api/users/securityGroups responded 200 in 73.2943 ms
+2025-12-25 13:47:58.321 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/users/securityGroups?pageSize=10&pageNumber=1 - 200 587 application/json; charset=utf-8 83.7897ms
+2025-12-25 13:48:00.745 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/users/securityGroups?pageSize=10&pageNumber=1 - null null
+2025-12-25 13:48:00.749 +02:00 [INF] CORS policy execution successful.
+2025-12-25 13:48:00.750 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API)'
+2025-12-25 13:48:00.751 +02:00 [INF] Route matched with {action = "GetSecurityGroups", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSecurityGroups(TaskManager.Application.Queries.GetSecurityGroups.SecurityGroupsQuery) on controller TaskManager.API.Controllers.UserController (TaskManager.API).
+2025-12-25 13:48:00.755 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupName], [t].[RoleId], [t].[SecurityGroupId], [t].[Id], [t].[RoleName]
+FROM [SecurityGroups] AS [s]
+LEFT JOIN (
+    SELECT [s0].[RoleId], [s0].[SecurityGroupId], [r].[Id], [r].[RoleName]
+    FROM [SecurityGroupRoles] AS [s0]
+    INNER JOIN [Roles] AS [r] ON [s0].[RoleId] = [r].[Id]
+) AS [t] ON [s].[Id] = [t].[SecurityGroupId]
+ORDER BY [s].[Id], [t].[RoleId], [t].[SecurityGroupId]
+2025-12-25 13:48:00.760 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:48:00.763 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:48:00.765 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:48:00.767 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:48:00.771 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:48:00.774 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Queries.GetSecurityGroups.SecurityGroupsResponse'.
+2025-12-25 13:48:00.776 +02:00 [INF] Executed action TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API) in 23.6223ms
+2025-12-25 13:48:00.777 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API)'
+2025-12-25 13:48:00.778 +02:00 [INF] HTTP GET /api/users/securityGroups responded 200 in 27.5711 ms
+2025-12-25 13:48:00.779 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/users/securityGroups?pageSize=10&pageNumber=1 - 200 587 application/json; charset=utf-8 33.9578ms
+2025-12-25 13:49:27.959 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/users?pageSize=10&pageNumber=1 - null null
+2025-12-25 13:49:28.000 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/users/securityGroups?pageSize=10&pageNumber=1 - null null
+2025-12-25 13:49:28.004 +02:00 [INF] CORS policy execution successful.
+2025-12-25 13:49:28.006 +02:00 [INF] CORS policy execution successful.
+2025-12-25 13:49:28.006 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API)'
+2025-12-25 13:49:28.006 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API)'
+2025-12-25 13:49:28.007 +02:00 [INF] Route matched with {action = "GetUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUsers(TaskManager.Application.Queries.GetUsers.GetUsersQuery) on controller TaskManager.API.Controllers.UserController (TaskManager.API).
+2025-12-25 13:49:28.008 +02:00 [INF] Route matched with {action = "GetSecurityGroups", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSecurityGroups(TaskManager.Application.Queries.GetSecurityGroups.SecurityGroupsQuery) on controller TaskManager.API.Controllers.UserController (TaskManager.API).
+2025-12-25 13:49:28.017 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[SecurityGroupId], [u].[Username], [u].[isActive]
+FROM [Users] AS [u]
+2025-12-25 13:49:28.019 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Queries.GetUsers.GetUsersRepsonse'.
+2025-12-25 13:49:28.030 +02:00 [INF] Executed action TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API) in 20.6922ms
+2025-12-25 13:49:28.030 +02:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupName], [t].[RoleId], [t].[SecurityGroupId], [t].[Id], [t].[RoleName]
+FROM [SecurityGroups] AS [s]
+LEFT JOIN (
+    SELECT [s0].[RoleId], [s0].[SecurityGroupId], [r].[Id], [r].[RoleName]
+    FROM [SecurityGroupRoles] AS [s0]
+    INNER JOIN [Roles] AS [r] ON [s0].[RoleId] = [r].[Id]
+) AS [t] ON [s].[Id] = [t].[SecurityGroupId]
+ORDER BY [s].[Id], [t].[RoleId], [t].[SecurityGroupId]
+2025-12-25 13:49:28.036 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API)'
+2025-12-25 13:49:28.039 +02:00 [INF] HTTP GET /api/users responded 200 in 33.1974 ms
+2025-12-25 13:49:28.041 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/users?pageSize=10&pageNumber=1 - 200 1386 application/json; charset=utf-8 81.9695ms
+2025-12-25 13:49:28.043 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:49:28.046 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:49:28.048 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:49:28.050 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:49:28.053 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:49:28.054 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Queries.GetSecurityGroups.SecurityGroupsResponse'.
+2025-12-25 13:49:28.055 +02:00 [INF] Executed action TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API) in 45.0384ms
+2025-12-25 13:49:28.057 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API)'
+2025-12-25 13:49:28.058 +02:00 [INF] HTTP GET /api/users/securityGroups responded 200 in 51.1583 ms
+2025-12-25 13:49:28.059 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/users/securityGroups?pageSize=10&pageNumber=1 - 200 587 application/json; charset=utf-8 61.0045ms
+2025-12-25 13:49:29.763 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/users/securityGroups?pageSize=10&pageNumber=1 - null null
+2025-12-25 13:49:29.767 +02:00 [INF] CORS policy execution successful.
+2025-12-25 13:49:29.767 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API)'
+2025-12-25 13:49:29.769 +02:00 [INF] Route matched with {action = "GetSecurityGroups", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSecurityGroups(TaskManager.Application.Queries.GetSecurityGroups.SecurityGroupsQuery) on controller TaskManager.API.Controllers.UserController (TaskManager.API).
+2025-12-25 13:49:29.772 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupName], [t].[RoleId], [t].[SecurityGroupId], [t].[Id], [t].[RoleName]
+FROM [SecurityGroups] AS [s]
+LEFT JOIN (
+    SELECT [s0].[RoleId], [s0].[SecurityGroupId], [r].[Id], [r].[RoleName]
+    FROM [SecurityGroupRoles] AS [s0]
+    INNER JOIN [Roles] AS [r] ON [s0].[RoleId] = [r].[Id]
+) AS [t] ON [s].[Id] = [t].[SecurityGroupId]
+ORDER BY [s].[Id], [t].[RoleId], [t].[SecurityGroupId]
+2025-12-25 13:49:29.776 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:49:29.780 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:49:29.782 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:49:29.784 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:49:29.786 +02:00 [INF] Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:49:29.787 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Queries.GetSecurityGroups.SecurityGroupsResponse'.
+2025-12-25 13:49:29.789 +02:00 [INF] Executed action TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API) in 18.6278ms
+2025-12-25 13:49:29.790 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API)'
+2025-12-25 13:49:29.791 +02:00 [INF] HTTP GET /api/users/securityGroups responded 200 in 23.4671 ms
+2025-12-25 13:49:29.792 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/users/securityGroups?pageSize=10&pageNumber=1 - 200 587 application/json; charset=utf-8 29.3842ms
+2025-12-25 13:49:48.293 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/users?pageSize=10&pageNumber=1 - null null
+2025-12-25 13:49:48.295 +02:00 [INF] CORS policy execution successful.
+2025-12-25 13:49:48.296 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API)'
+2025-12-25 13:49:48.296 +02:00 [INF] Route matched with {action = "GetUsers", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetUsers(TaskManager.Application.Queries.GetUsers.GetUsersQuery) on controller TaskManager.API.Controllers.UserController (TaskManager.API).
+2025-12-25 13:49:48.297 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/users/securityGroups?pageSize=10&pageNumber=1 - null null
+2025-12-25 13:49:48.300 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreatedAt], [u].[Email], [u].[PasswordHash], [u].[SecurityGroupId], [u].[Username], [u].[isActive]
+FROM [Users] AS [u]
+2025-12-25 13:49:48.301 +02:00 [INF] CORS policy execution successful.
+2025-12-25 13:49:48.304 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Queries.GetUsers.GetUsersRepsonse'.
+2025-12-25 13:49:48.304 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API)'
+2025-12-25 13:49:48.306 +02:00 [INF] Executed action TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API) in 8.1336ms
+2025-12-25 13:49:48.307 +02:00 [INF] Route matched with {action = "GetSecurityGroups", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSecurityGroups(TaskManager.Application.Queries.GetSecurityGroups.SecurityGroupsQuery) on controller TaskManager.API.Controllers.UserController (TaskManager.API).
+2025-12-25 13:49:48.308 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.UserController.GetUsers (TaskManager.API)'
+2025-12-25 13:49:48.310 +02:00 [INF] HTTP GET /api/users responded 200 in 14.7689 ms
+2025-12-25 13:49:48.313 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupName], [t].[RoleId], [t].[SecurityGroupId], [t].[Id], [t].[RoleName]
+FROM [SecurityGroups] AS [s]
+LEFT JOIN (
+    SELECT [s0].[RoleId], [s0].[SecurityGroupId], [r].[Id], [r].[RoleName]
+    FROM [SecurityGroupRoles] AS [s0]
+    INNER JOIN [Roles] AS [r] ON [s0].[RoleId] = [r].[Id]
+) AS [t] ON [s].[Id] = [t].[SecurityGroupId]
+ORDER BY [s].[Id], [t].[RoleId], [t].[SecurityGroupId]
+2025-12-25 13:49:48.319 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/users?pageSize=10&pageNumber=1 - 200 1386 application/json; charset=utf-8 26.4145ms
+2025-12-25 13:49:48.324 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:49:48.368 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:49:48.391 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:49:48.406 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:49:48.411 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:49:48.413 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Queries.GetSecurityGroups.SecurityGroupsResponse'.
+2025-12-25 13:49:48.415 +02:00 [INF] Executed action TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API) in 105.2989ms
+2025-12-25 13:49:48.417 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API)'
+2025-12-25 13:49:48.418 +02:00 [INF] HTTP GET /api/users/securityGroups responded 200 in 113.1526 ms
+2025-12-25 13:49:48.419 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/users/securityGroups?pageSize=10&pageNumber=1 - 200 587 application/json; charset=utf-8 122.384ms
+2025-12-25 13:49:56.020 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7245/api/users/securityGroups?pageSize=10&pageNumber=1 - null null
+2025-12-25 13:49:56.023 +02:00 [INF] CORS policy execution successful.
+2025-12-25 13:49:56.024 +02:00 [INF] Executing endpoint 'TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API)'
+2025-12-25 13:49:56.025 +02:00 [INF] Route matched with {action = "GetSecurityGroups", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetSecurityGroups(TaskManager.Application.Queries.GetSecurityGroups.SecurityGroupsQuery) on controller TaskManager.API.Controllers.UserController (TaskManager.API).
+2025-12-25 13:49:56.030 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [s].[Id], [s].[GroupName], [t].[RoleId], [t].[SecurityGroupId], [t].[Id], [t].[RoleName]
+FROM [SecurityGroups] AS [s]
+LEFT JOIN (
+    SELECT [s0].[RoleId], [s0].[SecurityGroupId], [r].[Id], [r].[RoleName]
+    FROM [SecurityGroupRoles] AS [s0]
+    INNER JOIN [Roles] AS [r] ON [s0].[RoleId] = [r].[Id]
+) AS [t] ON [s].[Id] = [t].[SecurityGroupId]
+ORDER BY [s].[Id], [t].[RoleId], [t].[SecurityGroupId]
+2025-12-25 13:49:56.034 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:49:56.037 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:49:56.041 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:49:56.044 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:49:56.046 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[RoleName]
+FROM [SecurityGroupRoles] AS [s]
+INNER JOIN [Roles] AS [r] ON [s].[RoleId] = [r].[Id]
+WHERE [s].[SecurityGroupId] = @__id_0
+2025-12-25 13:49:56.048 +02:00 [INF] Executing OkObjectResult, writing value of type 'TaskManager.Application.Queries.GetSecurityGroups.SecurityGroupsResponse'.
+2025-12-25 13:49:56.049 +02:00 [INF] Executed action TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API) in 21.683ms
+2025-12-25 13:49:56.050 +02:00 [INF] Executed endpoint 'TaskManager.API.Controllers.UserController.GetSecurityGroups (TaskManager.API)'
+2025-12-25 13:49:56.051 +02:00 [INF] HTTP GET /api/users/securityGroups responded 200 in 27.7487 ms
+2025-12-25 13:49:56.053 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7245/api/users/securityGroups?pageSize=10&pageNumber=1 - 200 587 application/json; charset=utf-8 33.5547ms

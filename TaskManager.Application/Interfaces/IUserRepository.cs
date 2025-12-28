@@ -16,9 +16,9 @@ namespace TaskManager.Application.Interfaces
         Task<User> getUserByUsernameAsync(string username);
         Task<User> GettUserByIdAsync(int id);
 
-        Task AssignSecurityGroupAsync(int userId, int securityGroupId, CancellationToken cancellationToken);
-
         Task<List<string>> GetUserSGRolesAsync(User user);
         Task<List<User>> GetUsersAsync();
+
+        Task<User> UpdateUserAsync(User user, CancellationToken cancellationToken, string? password = "");
     }
 }

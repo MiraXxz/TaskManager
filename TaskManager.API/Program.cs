@@ -94,11 +94,14 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 // REGISTER PASSWORD SERVICE
 builder.Services.AddScoped<IPasswordService, PasswordService>();
 
-// REGISTER USER SERVICE 
-builder.Services.AddScoped<IUserService, UserService>();
+// REGISTER ROLE REPOSITORY 
+builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 
 // ADD SECURITY GROUP REPO
 builder.Services.AddScoped<ISecurityGroupRepository, SecurityGroupRepository>();
+
+// REGIST APP TASK REPO
+builder.Services.AddScoped<IAppTaskRepository, AppTaskRepository>();
 
 // ADD MEDIATR
 builder.Services.AddMediatR(cfg =>

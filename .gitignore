@@ -1,1 +1,15 @@
 .vs/
+bin/
+obj/
+
+TaskManager.API/bin/
+TaskManager.API/obj/
+
+TaskManager.Application/bin/
+TaskManager.Application/obj/
+
+TaskManager.Infrastructure/bin/
+TaskManager.Infrastructure/obj/
+
+TaskManager.Domain/bin/
+TaskManager.Domain/obj/

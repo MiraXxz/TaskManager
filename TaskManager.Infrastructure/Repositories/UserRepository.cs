@@ -1,22 +1,25 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Azure.Core;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using TaskManager.Application.Interfaces;
 using TaskManager.Domain.Entities.User;
+using TaskManager.Infrastructure.Service;
 
 namespace TaskManager.Infrastructure.Repositories
 {
     public class UserRepository : IUserRepository
     {
         private readonly IApplicationDbContext _context;
-        private readonly ISecurityGroupRepository _sgRepo; 
-        public UserRepository(IApplicationDbContext context, ISecurityGroupRepository sgRepo)
+        private readonly IPasswordService _passwordSrv;
+        public UserRepository(IApplicationDbContext context, IPasswordService passwordSrv)
         {
             _context = context;
-            _sgRepo = sgRepo;
+            _passwordSrv = passwordSrv;
         }
 
         public async Task<User> AddUserAsync(User user, CancellationToken cancellationToken)
@@ -55,19 +58,6 @@ namespace TaskManager.Infrastructure.Repositories
             return user;
         }
 
-        public async Task AssignSecurityGroupAsync(int userId, int securityGroupId, CancellationToken cancellationToken)
-        {
-            SecurityGroup securityGroup = await _sgRepo.GetSecurityGroupById(securityGroupId);
-            if (securityGroup == null) throw new Exception("Security Group not found");
-
-            User user = await GettUserByIdAsync(userId);
-            if (user == null) throw new Exception("user does not exist");
-
-            user.SecurityGroupId = securityGroupId;
-
-            await _context.SaveChangesAsync(cancellationToken);        
-        }
-
         public async Task<List<string>> GetUserSGRolesAsync(User user)
         {
             if (user.SecurityGroupId == null) return null;
@@ -85,6 +75,24 @@ namespace TaskManager.Infrastructure.Repositories
         {
             var users = await _context.Users.ToListAsync();
             return users; 
+        }
+
+        public async Task<User> UpdateUserAsync(User user, CancellationToken cancellationToken, string? password = "")
+        {
+
+            var existingUser = await GettUserByIdAsync(user.Id);
+
+            existingUser.Username = user.Username;
+            existingUser.SecurityGroupId = user.SecurityGroupId;
+            existingUser.isActive = user.isActive;
+
+            existingUser.Email = user.Email;
+
+            if(password!= null && password.Length > 0)existingUser.PasswordHash = _passwordSrv.HashPassword(password);
+
+            await _context.SaveChangesAsync(cancellationToken);
+            return existingUser;
+        
         }
     }
 }

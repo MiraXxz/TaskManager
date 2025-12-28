@@ -17,5 +17,7 @@ namespace TaskManager.Domain.Entities.User
         public int? SecurityGroupId { get; set; } = null;
         public SecurityGroup? SecurityGroup { get; set; } = null;
 
+        public ICollection<AppTask> AppTasks { get; set; } = [];
+
     }
 }

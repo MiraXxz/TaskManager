@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TaskManager.Application.Interfaces;
+using TaskManager.Domain.Entities;
 using TaskManager.Domain.Entities.User;
 
 namespace TaskManager.Infrastructure.Data
@@ -12,7 +13,12 @@ namespace TaskManager.Infrastructure.Data
     public class ApplicationDbContext : DbContext, IApplicationDbContext
     {
         public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<SecurityGroupRole> SecurityGroupRoles { get; set; }
         public DbSet<SecurityGroup> SecurityGroups { get; set; }
+
+        public DbSet<AppTask> AppTasks { get; set; }
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
         {
@@ -35,6 +41,15 @@ namespace TaskManager.Infrastructure.Data
             modelBuilder.Entity<Role>()
                 .ToTable("Roles");
 
+            modelBuilder.Entity<AppTask>()
+                .ToTable("AppTasks");
+
+            modelBuilder.Entity<AppTask>()
+                .HasOne(t => t.User)
+                .WithMany(u => u.AppTasks)
+                .HasForeignKey(t => t.UserId)
+                .OnDelete(DeleteBehavior.SetNull);
+
             modelBuilder.Entity<User>()
                 .HasOne(u => u.SecurityGroup)
                 .WithMany(sg => sg.Users)
@@ -50,7 +65,8 @@ namespace TaskManager.Infrastructure.Data
             modelBuilder.Entity<SecurityGroupRole>()
                .HasOne(sgr => sgr.SecurityGroup)
                .WithMany(sg => sg.SecurityGroupRoles)
-               .HasForeignKey(sgr => sgr.SecurityGroupId);
+               .HasForeignKey(sgr => sgr.SecurityGroupId)
+               .OnDelete(DeleteBehavior.Cascade); ;
 
             modelBuilder.Entity<SecurityGroupRole>()
                 .HasOne(sgr => sgr.Role)

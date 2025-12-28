@@ -14,14 +14,16 @@ namespace TaskManager.Application.Commands.RegisterUser
     {
         private readonly ITokenService _tokenService;
         private readonly IUserRepository _userRepo; 
+        private readonly ISecurityGroupRepository _sgRepo;
         private readonly IMapper _mapper;
         private readonly IPasswordService _passwordService;
-        public RegisterUserCommandHandler(ITokenService tokenService, IUserRepository userRepo, IMapper mapper, IPasswordService passwordService)
+        public RegisterUserCommandHandler(ITokenService tokenService, IUserRepository userRepo, IMapper mapper, IPasswordService passwordService, ISecurityGroupRepository sgRepo)
         {
             _tokenService = tokenService;
             _userRepo = userRepo;
             _mapper = mapper;
-            _passwordService = passwordService;          
+            _passwordService = passwordService;
+            _sgRepo = sgRepo;
         }
 
         public async Task<RegisterUserResponse> Handle(RegisterUserCommand request, CancellationToken cancellationToken)
@@ -34,7 +36,7 @@ namespace TaskManager.Application.Commands.RegisterUser
             newUser.PasswordHash = _passwordService.HashPassword(request.Password);
             
             await _userRepo.AddUserAsync(newUser, cancellationToken);
-            await _userRepo.AssignSecurityGroupAsync(newUser.Id, 2, cancellationToken);
+            await _sgRepo.AssignSecurityGroupAsync(newUser.Id, 2, cancellationToken);
 
             var roles = await _userRepo.GetUserSGRolesAsync(newUser);
             string token = _tokenService.CreateToken(newUser, roles);
